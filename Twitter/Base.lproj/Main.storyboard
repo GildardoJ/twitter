@@ -65,13 +65,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="139.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tPG-9w-AgZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="65" id="KOv-Gz-OJn"/>
-                                                <constraint firstAttribute="height" constant="65" id="Tpu-0a-RpE"/>
-                                            </constraints>
-                                        </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="John Doe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc3-cs-CKs">
                                             <rect key="frame" x="73" y="11" width="77" height="21"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
@@ -80,14 +73,21 @@
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dr8-sU-yJP">
                                             <rect key="frame" x="73" y="36" width="286" height="93"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tPG-9w-AgZ">
+                                            <rect key="frame" x="0.0" y="36" width="65" height="65"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="65" id="KOv-Gz-OJn"/>
+                                                <constraint firstAttribute="height" constant="65" id="Tpu-0a-RpE"/>
+                                            </constraints>
+                                        </imageView>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="dr8-sU-yJP" firstAttribute="leading" secondItem="tPG-9w-AgZ" secondAttribute="trailing" constant="8" id="1hu-JO-ryV"/>
-                                        <constraint firstItem="tPG-9w-AgZ" firstAttribute="top" secondItem="vaq-Ox-wES" secondAttribute="top" id="85z-xo-AIU"/>
+                                        <constraint firstItem="tPG-9w-AgZ" firstAttribute="top" secondItem="vaq-Ox-wES" secondAttribute="top" constant="36" id="8cC-GC-Ty7"/>
                                         <constraint firstItem="Qc3-cs-CKs" firstAttribute="top" secondItem="vaq-Ox-wES" secondAttribute="topMargin" id="BBV-dp-dI3"/>
                                         <constraint firstItem="Qc3-cs-CKs" firstAttribute="leading" secondItem="tPG-9w-AgZ" secondAttribute="trailing" constant="8" id="HSK-6c-pKI"/>
                                         <constraint firstItem="dr8-sU-yJP" firstAttribute="trailing" secondItem="vaq-Ox-wES" secondAttribute="trailingMargin" id="M3E-ta-IuJ"/>
